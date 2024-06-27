@@ -43,7 +43,7 @@ const UserSignup=async(req,res)=>{
 
 const UserLogin=async(req,res)=>{
     const {Email,Password}=req.body;
-    let Exiting; 
+let Exiting; 
     try{
         Exiting=await Signup.findOne({Email:Email})
     }
